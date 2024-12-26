@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  
+  images: {
+    domains: [
+      'shashank-portfolio-flame.vercel.app'
+    ],
+  },
+
 };
 
 export default nextConfig;
