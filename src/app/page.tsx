@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
-  var data = [
+  const data = [
     ["https://shashank-portfolio-flame.vercel.app/assets/img/twitter-logo.png", "title", "description"],
     ["image link 2", "title 2", "description 2"]
   ];
@@ -29,7 +29,7 @@ export default function Home() {
           <h1>{data[1][1]}</h1>
         </div>
 
-        <div className="xl:flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <Image
             src={data[0][0]}
             width={500}
