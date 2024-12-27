@@ -3,9 +3,15 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   
   images: {
-    domains: [
-      'shashank-portfolio-flame.vercel.app'
-    ],
+    domains : [
+      "upload.wikimedia.org",
+      "www.oracle.com",
+      "cdn.iconscout.com",
+      "vercel.app",
+      "unsplash.com",
+      "pixabay.com"
+    ]
+    
   },
 
 };
