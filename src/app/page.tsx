@@ -5,11 +5,11 @@ import { useState } from "react";
 
 export default function Home() {
   const data = [
-    ["https://cdn.iconscout.com/icon/free/png-512/free-java-logo-icon-download-in-svg-png-gif-file-formats--food-background-fresh-nature-brand-pack-logos-icons-2284677.png?f=webp&w=256", "Java Logo", "The iconic Java programming language logo."],
-    ["https://cdn.iconscout.com/icon/free/png-512/free-java-logo-icon-download-in-svg-png-gif-file-formats--duke-development-tools-pack-logos-icons-226003.png?f=webp&w=256", "Oracle Java", "Java is maintained and updated by Oracle Corporation."],
+    ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGAsPJPdri6KPILLBdWSoUjZyFSQtSNW3EdA&s", "Java Logo", "The iconic Java programming language logo."],
+    ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJS9l8zrqNftUEd8fXDpYnC4UpBcbUNcYzjQ&s", "Oracle Java", "Java is maintained and updated by Oracle Corporation."],
     ["https://cdn.iconscout.com/icon/premium/png-512-thumb/eclipse-ide-7521441-7197014.png?f=webp&w=256", "Eclipse IDE", "A widely-used IDE for Java development."],
-    ["https://cdn.iconscout.com/icon/free/png-256/intellij-idea-569199.png", "IntelliJ IDEA", "A powerful IDE for Java programming."],
-    ["https://cdn.iconscout.com/icon/free/png-512/free-spring-boot-logo-icon-download-in-svg-png-gif-file-formats--social-media-technology-brand-pack-logos-icons-4406740.png?f=webp&w=256", "Spring Framework", "A popular Java framework for building applications."]
+    ["https://static-00.iconduck.com/assets.00/intellij-idea-icon-2048x2026-pt4psh5t.png", "IntelliJ IDEA", "A powerful IDE for Java programming."],
+    ["https://global.discourse-cdn.com/auth0/original/3X/3/9/394100b6ffe51169973204a825bc3d47f0b43b2f.png", "Spring Framework", "A popular Java framework for building applications."]
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,14 +48,14 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="flex justify-around items-center">
+        <div className="flex justify-around items-center px-12">
           <div className={`hidden xl:flex flex-col items-center transition-opacity duration-400 ${isTransitioning ? "opacity-0" : "opacity-100"}`}>
             <Image
               src={data[prevIndex][0]}
               width={200}
               height={200}
               alt={data[prevIndex][1]}
-              className="p-4"
+              className="p-4 rounded-full object-cover aspect-square"
             />
             <h1>{data[prevIndex][1]}</h1>
           </div>
@@ -66,7 +66,7 @@ export default function Home() {
               width={400}
               height={400}
               alt={data[currentIndex][1]}
-              className="p-4"
+              className="p-16 rounded-full object-cover aspect-square"
             />
             <h1 className="text-lg font-bold">{data[currentIndex][1]}</h1>
             <p className="text-gray-600">{data[currentIndex][2]}</p>
@@ -78,7 +78,7 @@ export default function Home() {
               width={200}
               height={200}
               alt={data[nextIndex][1]}
-              className="p-4"
+              className="p-4 rounded-full object-cover aspect-square"
             />
             <h1>{data[nextIndex][1]}</h1>
           </div>
