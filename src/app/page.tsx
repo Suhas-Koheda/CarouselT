@@ -66,7 +66,7 @@ export default function Home() {
               width={400}
               height={400}
               alt={data[currentIndex][1]}
-              className="p-16 rounded-full object-cover aspect-square"
+              className="p-4 lg:p-16 rounded-full object-cover aspect-square"
             />
             <h1 className="text-lg font-bold">{data[currentIndex][1]}</h1>
             <p className="text-gray-600">{data[currentIndex][2]}</p>
